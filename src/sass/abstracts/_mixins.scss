@@ -1,0 +1,29 @@
+// setup element size
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+// basic flex center
+@mixin flex-center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex($display, $align, $justify, $direction:auto){
+    display: $display;
+    align-items: $align;
+    justify-content: $justify;
+    @if $direction=='column'{
+        flex-direction: column;
+    }
+    @else if $direction=='auto'{
+        flex-direction: row;
+    }
+}
+
+@mixin font($family: $nanami, $size: $baseFontSize, $color:black) {
+    font-family: $family;
+    font-size: $size;
+    color: $color;
+}

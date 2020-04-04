@@ -1,0 +1,32 @@
+.button{
+    cursor: pointer;
+    padding: 20px;
+     font-size: .9em; 
+     text-transform: uppercase;
+     letter-spacing: 0.1em;
+     font-family: $nanami-bold;
+     color: $light-grey;
+     transition: .5s ease-in-out;
+
+     &--pink{
+        border: none;
+        background-color: $pink;
+        &:hover{
+           background-color: $pink-hover;
+        }
+     }
+     
+     &--transparent{
+        border: 2px solid $light-grey;
+        background: transparent;
+        &:hover{
+           background-color: $light-grey;
+           color: $black;
+        }
+     }
+ }
+
+ //media queries example
+//  @mixin button--md {
+    
+//  }

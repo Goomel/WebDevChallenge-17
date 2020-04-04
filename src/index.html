@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/8ff3ad3ebd.js" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href=""> -->
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
     <header class="header">
         <nav class="nav">
             <div class="nav__logo">
-                <img src="../assets/img/logo.png" alt="">
+                <img src="../assets/img/header/logo.png" alt="">
             </div>
             <ul class="nav__list">
                 <li class="nav__item">
@@ -39,38 +39,40 @@
                 </li>
             </ul>
             <div class="nav__hamburger">
-                <i class="fas fa-bars"></i>
+                <div class="nav__hamburger--line"></div>
+                <div class="nav__hamburger--line"></div>
+                <div class="nav__hamburger--line"></div>
             </div>
         </nav>
         <div class="header__slider">
-            <h1 class="header__title">
-                Taste on Our Hands!
-            </h1>
+            <div class="header__title">
+                <img src="../assets/img/header/tasteonourhands-text.png" alt="Taste on Our hands!">
+            </div>
             <h2 class="header__subtitle">- Welcome -</h2>
-            <div class="arrow--left"><i class="fas fa-chevron-left"></i></div>
-            <div class="arrow--right"><i class="fas fa-chevron-right"></i></div>
-            <div class="header__scrollDown"></div>
+            <!-- <div class="arrow--left"><i class="fas fa-chevron-left"></i></div> -->
+            <!-- <div class="arrow--right"><i class="fas fa-chevron-right"></i></div> -->
+            <div class="header__scrollDown"><i class="fas fa-angle-double-down"></i></div>
         </div>
     </header>
 
     <div class="section section--our-top">
         <div>
-            <h2 class="section__title">Welcome to out <span>TOP</span></h2>
+            <h2 class="section__title">Welcome to our <span>Top</span></h2>
             <p class="section__content">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, suscipit? Itaque, necessitatibus?
                 Facilis perspiciatis magni voluptates quidem dolores aliquid obcaecati magnam cumque! Ullam temporibus,
                 pariatur ex tempora perferendis voluptatibus repudiandae?
             </p>
-            <button class="button button--red">Make a reservation</button>
+            <button class="button button--pink">Make a reservation</button>
         </div>
 
         <div class="section section--cooking-time">
             <div>
-                <img src="../assets/img/cooking-time/cooking-time.png" alt="">
+                <img src="../assets/img/cooking-time/cooking-time.png" alt="Cooking">
             </div>
             <div>
                 <h2>Make every cooking time a special moment</h2>
-                <img src="../assets/img/cooking-time/pot.png" alt="">
+                <img src="../assets/img/cooking-time/pot.png" alt="Pot">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ratione commodi, ex sit modi
                     praesentium totam eaque hic? Tempora quisquam natus voluptatibus error minus omnis laboriosam eos
                     odio ratione qui!</p>
@@ -79,23 +81,25 @@
     </div>
 
     <div class="section section--our-baking">
-        <h2 class="section__title">Out <span>Baking</span></h2>
+        <h2 class="section__title">Our <span>Baking</span></h2>
         <p class="section__content">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, suscipit? Itaque, necessitatibus?
             Facilis perspiciatis magni voluptates quidem dolores aliquid obcaecati magnam cumque! Ullam temporibus,
             pariatur ex tempora perferendis voluptatibus repudiandae?
         </p>
-        <button class="button button--red">View full menu</button>
+        <button class="button button--pink">View full menu</button>
     </div>
 
     <div class="section section--lemon-cake">
-        <h2 class="section__title">The lemon cake</h2>
+        <div class="section__title">
+            <img src="../assets/img/the-lemon-cake/thelemoncake-text.png" alt="The Lemon Cake">
+        </div>
         <p class="section__content section-content--white">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed nostrum ipsam magnam animi, enim at nam
             inventore ex nobis esse.
         </p>
         <span class="section__cost-span">$15.00</span>
-        <button class="button button">View all</button>
+        <button class="button button--transparent">View all</button>
         <div class="arrow--left"><i class="fas fa-chevron-left"></i></div>
         <div class="arrow--right"><i class="fas fa-chevron-right"></i></div>
     </div>
@@ -165,31 +169,28 @@
                     <h3 class="post__title">How to make</h3>
                     <span class="post__subtitle">theFood</span>
                     <!-- Button only if active -->
-                    <button class="button button--red">View</button>
+                    <button class="button button--pink">View</button>
                 </div>
             </div>
             <div class="post">
                 <div class="post__description">
                     <h3 class="post__title">How to make</h3>
                     <span class="post__subtitle">theFood</span>
-                    <!-- Button only if active -->
-                    <button class="button button--red">View</button>
+                    <button class="button button--pink">View</button>
                 </div>
             </div>
             <div class="post">
                 <div class="post__description">
                     <h3 class="post__title">How to make</h3>
                     <span class="post__subtitle">theFood</span>
-                    <!-- Button only if active -->
-                    <button class="button button--red">View</button>
+                    <button class="button button--pink">View</button>
                 </div>
             </div>
             <div class="post">
                 <div class="post__description">
                     <h3 class="post__title">How to make</h3>
                     <span class="post__subtitle">theFood</span>
-                    <!-- Button only if active -->
-                    <button class="button button--red">View</button>
+                    <button class="button button--pink">View</button>
                 </div>
             </div>
 
@@ -205,7 +206,7 @@
                 <input type="text" class="form__input">
                 <input type="text" class="form__input">
                 <textarea name="" id="" cols="30" rows="10" class="form__text"></textarea>
-                <button type="submit" class="button button--red"></button>
+                <button type="submit" class="button button--pink">Submit now</button>
             </form>
 
         </div>
@@ -250,7 +251,7 @@
             <a href="" class="social__box"><i class="fab fa-vimeo-v"></i></a>
         </div>
     </footer>
-
+    <script src="./sass/components/nav/nav.js"></script>
 </body>
 
 </html>
