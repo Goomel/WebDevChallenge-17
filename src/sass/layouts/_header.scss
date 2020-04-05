@@ -1,0 +1,33 @@
+.header{
+    min-height: 80vh;
+    &__slider{
+        height:70vh;
+        position: relative;
+        background-image: url('../../../assets/img/header/cover.png');
+        background-size: cover;
+        background-position: center;
+        background-color: black;
+        @include flex-center();
+        flex-direction: column; 
+        margin-top: 10vh;
+    }
+    &__title{
+        background-image: url('../../../assets/img/header/tasteonourhands-sm.png');
+        width: 80%;
+        min-height: 30%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: -20%;
+        margin-bottom: 20px;
+    }
+    &__subtitle{
+        text-transform: uppercase;
+        @include font($nanami-regular, $h3-font-size, $light-grey);
+        letter-spacing: 2px;
+    }
+    &__scrollDown{
+        position: absolute;
+        bottom: 20px;
+    }
+}

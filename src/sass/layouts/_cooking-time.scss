@@ -1,0 +1,20 @@
+.section--cooking-time{
+    min-height: 70vh;
+}
+.section{
+    &__image{
+        &>img{
+            @include size(100%,100%);
+        }
+    }
+    &__aside{
+        background-color: $peachy;
+    }
+    &__title{
+        &--orange{
+            @include font($nanami-bold,$h2-font-size,$pink);
+            text-transform: uppercase;
+        }
+    }
+    
+}
