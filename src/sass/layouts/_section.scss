@@ -20,5 +20,11 @@
         font-size: $text-font-size;
         color: $grey;
         margin: 0 15px 20px 15px;
+        &--white{
+            color: white;
+        }
+    }
+    &__cost{
+        @include font($master-of-break, $h2-font-size, white);
     }
 }

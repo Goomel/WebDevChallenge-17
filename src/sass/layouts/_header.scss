@@ -3,21 +3,17 @@
     &__slider{
         height:70vh;
         position: relative;
-        background-image: url('../../../assets/img/header/cover.png');
-        background-size: cover;
-        background-position: center;
         background-color: black;
+        @include background('../../../assets/img/header/cover.png', cover, center);
         @include flex-center();
         flex-direction: column; 
         margin-top: 10vh;
     }
     &__title{
-        background-image: url('../../../assets/img/header/tasteonourhands-sm.png');
         width: 80%;
         min-height: 30%;
-        background-size: contain;
+        @include background('../../../assets/img/header/tasteonourhands-sm.png', contain, center);
         background-repeat: no-repeat;
-        background-position: center;
         margin-top: -20%;
         margin-bottom: 20px;
     }
