@@ -7,6 +7,7 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/8ff3ad3ebd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../vendor/lightbox2-2.11.1/dist/css/lightbox.min.css">
 </head>
 
 <body>
@@ -133,29 +134,48 @@
         </div>
     </div>
 
-    <div class="section section--gallery">
+    <div class="gallery">
         <div class="gallery__card">
-            <img src="../assets/img/gallery/photo1.png" alt="First photo">
+            <a href="../assets/img/gallery/photo1.png" data-lightbox="gallery">
+                <img
+                src="../assets/img/gallery/photo1.png" alt="First photo">
+            </a>
         </div>
-        <div class="gallery__card">
-            <h2 class="gallery__card--text">Gallery</h2>
+        <div class="gallery__card gallery__card--text">
+            <h2 class="gallery__card--text--title">Gallery</h2>
         </div>
         <div class="gallery__card gallery__card--long">
-            <img src="../assets/img/gallery/photo2.png" alt="Second photo">
+            <a href="../assets/img/gallery/photo2.png" data-lightbox="gallery">
+                <img
+                src="../assets/img/gallery/photo2.png" alt="First photo">
+            </a>
         </div>
         <div class="gallery__card gallery__card--long">
-            <img src="../assets/img/gallery/photo3.png" alt="Third photo">
+            <a href="../assets/img/gallery/photo3.png" data-lightbox="gallery">
+                <img
+                src="../assets/img/gallery/photo3.png" alt="First photo">
+            </a>
         </div>
         <div class="gallery__card">
+            <a href="../assets/img/gallery/photo4.png" data-lightbox="gallery">
+                <img
+                src="../assets/img/gallery/photo4.png" alt="First photo">
+            </a>
             <div class="gallery__card--inside">
-                <img src="../assets/img/gallery/photo4.png" alt="Fourth photo">
-                <h2 class="gallery__card--text-inside">The cake blah</h2>
+                <h2 class="gallery__card--inside--title">The cake blah</h2>
                 <span class="hyphen"></span>
             </div>
         </div>
         <div class="gallery__card">
-            <img src="../assets/img/gallery/photo5.png" alt="Fifth photo">
+            <a href="../assets/img/gallery/photo5.png" data-lightbox="gallery">
+                <img
+                src="../assets/img/gallery/photo5.png" alt="First photo">
+            </a>
         </div>
+        <a class="no-visible" href="../assets/img/gallery/photo6.png" data-lightbox="gallery">
+            <img
+            src="../assets/img/gallery/photo6.png" alt="First photo">
+        </a>
     </div>
 
     <div class="section section--blog">
@@ -201,7 +221,7 @@
         <div>
             <h2 class="section__title">Contact <span>Us</span></h2>
 
-            <form action="" class="form">
+            <form action="#" class="form">
                 <input type="text" class="form__input">
                 <input type="text" class="form__input">
                 <input type="text" class="form__input">
@@ -251,7 +271,19 @@
             <a href="#" class="social__box"><i class="fab fa-vimeo-v"></i></a>
         </div>
     </footer>
+    <script src="../vendor/lightbox2-2.11.1/dist/js/lightbox-plus-jquery.min.js"></script>
     <script src="./sass/components/nav/nav.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 300,
+            'wrapAround': true,
+            'alwaysShowNavOnTouchDevices': true,
+            'disableScrolling': true,
+            'wrapAround': true
+        })
+    </script>
+
+
 </body>
 
 </html>

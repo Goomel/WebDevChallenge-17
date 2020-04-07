@@ -1,0 +1,54 @@
+// REFACTOR ME 
+
+.gallery{
+    display:flex;
+    flex-wrap: wrap;
+    &__card{
+        width: 50%;
+        min-height: 30vh;
+        position: relative;
+        @include flex-center();
+        &--text{
+            background-color: $peachy;
+            &--title{
+                @include font($nanami-bold, $h3-font-size, $pink);
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                text-align: center;
+                margin: 5px;
+            }
+        }
+        &>a{
+            display: block;
+            @include size(100%, 100%);
+            overflow: hidden;
+            &>img{
+                width:100%;
+                height: auto;
+                display: block;
+                object-fit: cover;
+            }
+        }
+        &--long{
+            width:100%;
+        }
+        &--inside{
+            position: absolute;
+            @include size(70%,70%);
+            overflow: hidden;
+            background-color: rgba($color: #D11A0F, $alpha: .8);
+            &--title{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+                text-transform: uppercase;
+                @include font($nanami-regular, $h3-font-size,white);
+            }
+        }
+    }
+    .no-visible{
+        display: none;
+    }
+}
