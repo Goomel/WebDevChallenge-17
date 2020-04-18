@@ -1,0 +1,22 @@
+.footer{
+    text-align: center;
+    padding: 20px 0;
+    &__logo{
+        @include font($master-of-break, $h2-font-size, red);
+    }
+    &__copyright{
+        @include font($nanami-book, $base-font-size, $grey);
+        margin: 10px;
+    }
+    .social{
+        @include flex(flex,center, center, row);
+        margin: 0 auto 10px auto;
+        &__box{
+            @include size(35px,35px);
+            @include flex-center();
+            background-color: black;
+            border-radius: 50%;
+            margin: 0 5px;
+        }
+    }
+}

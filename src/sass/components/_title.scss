@@ -1,0 +1,31 @@
+.title{
+    // margin: 30px 20px 20px 20px;
+    margin: 20px auto;
+    max-width: 80%;
+    @include font($nanami-book, $h2-font-size, $strong-red);
+    text-transform: uppercase;
+    text-align: center;
+    &--white{
+        color: white;
+    }  
+    &--pink{
+        @include font($nanami-bold,$h2-font-size,$pink);
+    }  
+    &--initial{
+        text-transform: initial;
+    }
+    &>span{
+        font-family: $master-of-break;
+        padding: 0 10px;
+        text-transform: initial;
+    }     
+    &>img{
+        width:100%;
+    }
+}
+
+.subtitle{
+    @include font($nanami-regular, $h3-font-size, $light-grey);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

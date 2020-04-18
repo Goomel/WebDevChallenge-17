@@ -4,12 +4,13 @@
     z-index: 1;
     background-color: white;
     @include flex(flex,center,space-between);
-    &__logo{
+    .logo{
         padding-left: 20px;
         &>img{
             width: 3em;
         }
     }
+
     &__list{
         position: fixed;
         z-index: 1;
@@ -30,6 +31,7 @@
         }
     }
     &__item{
+        overflow: hidden;
         margin: 20px;
         text-align: center;
     }

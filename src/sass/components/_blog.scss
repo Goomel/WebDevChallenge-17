@@ -1,0 +1,64 @@
+.blog{
+    &__dashboard{
+      width:70%;
+      @include flex(flex, center, center, column);
+      margin: 0 auto;
+    }
+    &__post{
+        @include size(100%, 40vh);
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        margin: 20px;
+        overflow: hidden;
+
+        &:nth-child(1){
+            background-image: url(../../../assets/img/blog/blog-photo1.png);
+        }
+        &:nth-child(2){
+            background-image: url(../../../assets/img/blog/blog-photo2.png);
+        }
+        &:nth-child(3){
+            background-image: url(../../../assets/img/blog/blog-photo3.png);
+        }
+        &:nth-child(4){
+            background-image: url(../../../assets/img/blog/blog-photo4.png);
+        }
+        &--content-box{
+            position: relative;
+            background-color: #fff;
+            border-radius: 50%;
+            @include size(100%, 100%);
+            top: 0;
+            transform: translateY(-50%);
+            box-shadow: 0px 2px 8px $black;
+            overflow: hidden;
+            transition: .5s ease-in-out;
+        }
+        &--description{
+            position: absolute;
+            @include size(80%, 50%);
+            top:50%;
+            left: 50%;
+            transform: translateX(-50%);
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        &--title{
+            @include font($nanami-bold, $h3-font-size, $black);
+            text-transform: uppercase;
+            width:100%;
+            display: block;
+        }
+        &--subtitle{
+            @include font($master-of-break, $h3-font-size, $strong-red);
+            letter-spacing: 2px;
+            width: 100%;
+            display: block;
+        }
+    }
+    &__button{
+        margin: 0;
+        padding: 10px;
+    }
+}

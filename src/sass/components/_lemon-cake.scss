@@ -1,0 +1,8 @@
+.the-lemon-cake{
+        height: 80vh;
+        @include background('../../assets/img/the-lemon-cake/the-lemon-cake.png', cover, initial);
+        position: relative;
+    &__cost{
+        @include font($master-of-break, $h2-font-size, white);
+    }
+}

@@ -1,10 +1,11 @@
-.section--features{
+.features{
     @include flex(flex, center, center, column);
-    &>.feature__box{
-            min-width: 50%;
-            margin: 30px;
+    text-align: center;
+    .feature__box{
+        min-width: 50%;
+        margin: 30px;
     }
-    &>.feature__line{
+    .feature__line{
         display: block;
         @include size(60%, 1px);
         background-color: black;

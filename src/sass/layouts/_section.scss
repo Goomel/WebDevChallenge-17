@@ -1,30 +1,6 @@
 .section{
-    &--our-top{
-        @include flex-center();
-    }
     font-family: $nanami-regular;
     text-align: center;
     min-height: 55vh;
-    &__title{
-        margin: 30px 20px 20px 20px;
-        color: $strong-red;
-        font-size: $h3-font-size;
-        text-transform: uppercase;
-        &>span{
-            font-family: $master-of-break;
-            padding: 0 10px;
-            text-transform: initial;
-        }
-    }
-    &__content{
-        font-size: $text-font-size;
-        color: $grey;
-        margin: 0 15px 20px 15px;
-        &--white{
-            color: white;
-        }
-    }
-    &__cost{
-        @include font($master-of-break, $h2-font-size, white);
-    }
+    @include flex(flex,center,center,column);
 }

@@ -1,0 +1,13 @@
+.arrow{
+    position: absolute;
+    top: 60%;
+    margin: 10px;
+    color: $light-grey;
+    font-size: $h3-font-size;
+    &--left{
+        left: 2%;
+    }
+    &--right{
+        right: 2%;
+    }
+}

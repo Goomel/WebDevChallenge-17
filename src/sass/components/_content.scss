@@ -1,0 +1,9 @@
+.content{
+    font-size: $text-font-size;
+    color: $grey;
+    margin: 0 15px 20px 15px;
+    text-align: center;
+    &--white{
+        color: white;
+    }
+}

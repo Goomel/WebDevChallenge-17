@@ -1,0 +1,18 @@
+.header{
+    min-height: 80vh;
+    &__slide{
+        position: relative;
+        height:70vh;
+        @include flex-center();
+        flex-direction: column; 
+        @include background('../../assets/img/header/header-cover.png', cover, center);
+        margin-top: 10vh;
+        background-color: black;
+    }
+
+    &__scrollDown{
+        position: absolute;
+        bottom: 20px;
+        cursor: pointer;
+    }
+}

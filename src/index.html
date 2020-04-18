@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Top FOOD & DRINK</title>
     <script src="https://kit.fontawesome.com/8ff3ad3ebd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="../vendor/lightbox2-2.11.1/dist/css/lightbox.min.css">
@@ -13,8 +13,8 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <div class="nav__logo">
-                <img src="../assets/img/header/logo.png" alt="">
+            <div class="logo">
+                <img src="../assets/img/header/logo.png" alt="Logo">
             </div>
             <ul class="nav__list">
                 <li class="nav__item">
@@ -39,250 +39,261 @@
                     <a class="nav__link" href="#">Contacts</a>
                 </li>
             </ul>
-            <div class="nav__hamburger">
+            <div aria-label="toggle menu" class="nav__hamburger">
                 <div class="nav__hamburger--line"></div>
                 <div class="nav__hamburger--line"></div>
                 <div class="nav__hamburger--line"></div>
             </div>
         </nav>
-        <div class="header__slider">
-            <div class="header__title">
+        <div class="header__slide">
+            <div class="title"><img src="../assets/img/header/tasteonourhands-sm.png" alt="Taste on our hands">
             </div>
-            <h2 class="header__subtitle">- Wellcome -</h2>
-            <div class="header__scrollDown"><img src="/assets/img/header/double-arrow.png" alt=""></div>
+            <h2 class="subtitle">- Wellcome -</h2>
+            <div class="header__scrollDown"><img src="/assets/img/header/double-arrow.png" alt="Double arrow"></div>
         </div>
     </header>
 
-    <div class="section section--our-top">
-        <div>
-            <h2 class="section__title">Welcome to our <span>Top</span></h2>
-            <p class="section__content">
+    <main class="page-content">
+        <div class="section section--our-top">
+            <div>
+                <h2 class="title">Welcome to our <span>Top</span></h2>
+                <p class="content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, suscipit? Itaque, necessitatibus?
+                    Facilis perspiciatis magni voluptates quidem dolores aliquid obcaecati magnam cumque! Ullam
+                    temporibus,
+                    pariatur ex tempora perferendis voluptatibus repudiandae?
+                </p>
+                <button class="button button--pink">Make a reservation</button>
+            </div>
+        </div>
+
+        <div class="cooking-time">
+            <div class="cooking-time__image">
+                <img src="../assets/img/cooking-time/cooking-time.png" alt="Cooking">
+            </div>
+            <div class="wrapper cooking-time__aside">
+                <h2 class="title title--pink">Make every cooking time a special moment
+                </h2>
+                <img src="../assets/img/cooking-time/pot.png" alt="Pot">
+                <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ratione
+                    commodi,
+                    ex sit modi
+                    praesentium totam eaque hic? Tempora quisquam natus voluptatibus error minus omnis laboriosam
+                    eos
+                    odio ratione qui!</p>
+            </div>
+        </div>
+
+        <div class="section section--our-baking">
+            <h2 class="title">Our <span>Baking</span></h2>
+            <p class="content">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, suscipit? Itaque, necessitatibus?
                 Facilis perspiciatis magni voluptates quidem dolores aliquid obcaecati magnam cumque! Ullam temporibus,
                 pariatur ex tempora perferendis voluptatibus repudiandae?
             </p>
-            <button class="button button--pink">Make a reservation</button>
+            <button class="button button--pink">View full menu</button>
         </div>
-    </div>
 
-    <div class="section section--cooking-time">
-        <div class="section__image">
-            <img src="../assets/img/cooking-time/cooking-time.png" alt="Cooking">
-        </div>
-        <div class="section__aside">
-            <h2 class="section__title section__title--orange">Make every cooking time a special moment</h2>
-            <img src="../assets/img/cooking-time/pot.png" alt="Pot">
-            <p class="section__content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ratione commodi,
-                ex sit modi
-                praesentium totam eaque hic? Tempora quisquam natus voluptatibus error minus omnis laboriosam eos
-                odio ratione qui!</p>
-        </div>
-    </div>
-    </div>
-
-    <div class="section section--our-baking">
-        <h2 class="section__title">Our <span>Baking</span></h2>
-        <p class="section__content">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, suscipit? Itaque, necessitatibus?
-            Facilis perspiciatis magni voluptates quidem dolores aliquid obcaecati magnam cumque! Ullam temporibus,
-            pariatur ex tempora perferendis voluptatibus repudiandae?
-        </p>
-        <button class="button button--pink">View full menu</button>
-    </div>
-
-    <div class="section section--lemon-cake">
-        <div class="section--wrapper">
-            <div class="section__title">
+        <div class="the-lemon-cake">
+            <div class="wrapper">
+                <div class="title"><img src="../assets/img/the-lemon-cake/the-lemon-cake-text.png" alt="The Lemon Cake">
+                </div>
+                <p class="content content--white">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed nostrum ipsam magnam animi, enim at
+                    nam
+                    inventore ex nobis esse.
+                </p>
+                <span class="the-lemon-cake__cost">$15.00</span>
+                <button class="button button--transparent">View all</button>
             </div>
-            <p class="section__content section__content--white">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed nostrum ipsam magnam animi, enim at nam
-                inventore ex nobis esse.
-            </p>
-            <span class="section__cost">$15.00</span>
-            <button class="button button--transparent">View all</button>
+            <div class="arrow arrow--left"><i class="fas fa-chevron-left"></i></div>
+            <div class="arrow arrow--right"><i class="fas fa-chevron-right"></i></div>
         </div>
-        <div class="arrow arrow--left"><i class="fas fa-chevron-left"></i></div>
-        <div class="arrow arrow--right"><i class="fas fa-chevron-right"></i></div>
-    </div>
 
-    <div class="section section--features">
-        <div class="feature__box">
-            <div class="feature__icon">
-                <img src="../assets/img/features/shopping-trolley.png" alt="Shopping trolley">
+        <div class="features">
+            <div class="feature__box">
+                <div class="feature__icon">
+                    <img src="../assets/img/features/shopping-trolley.png" alt="Shopping trolley">
+                </div>
+                <h3 class="feature__title">
+                    Online Shopping
+                </h3>
             </div>
-            <h3 class="feature__title">
-                Online Shopping
-            </h3>
-        </div>
-        <span class="feature__line"></span>
-        <div class="feature__box">
-            <div class="feature__icon">
-                <img src="../assets/img/features/delivery.png" alt="Delivery">
+            <span class="feature__line"></span>
+            <div class="feature__box">
+                <div class="feature__icon">
+                    <img src="../assets/img/features/delivery.png" alt="Delivery">
+                </div>
+                <h3 class="feature__title">Free Ship</h3>
             </div>
-            <h3 class="feature__title">
-                Free Ship
-            </h3>
-        </div>
-        <span class="feature__line"></span>
-        <div class="feature__box">
-            <div class="feature__icon">
-                <img src="../assets/img/features/like.png" alt="Like">
-            </div>
-            <h3 class="feature__title">
-                Quality Products
-            </h3>
-        </div>
-    </div>
-
-    <div class="gallery">
-        <div class="gallery__card">
-            <a href="../assets/img/gallery/photo1.png" data-lightbox="gallery">
-                <img
-                src="../assets/img/gallery/photo1.png" alt="First photo">
-            </a>
-        </div>
-        <div class="gallery__card gallery__card--text">
-            <h2 class="gallery__card--text--title">Gallery</h2>
-        </div>
-        <div class="gallery__card gallery__card--long">
-            <a href="../assets/img/gallery/photo2.png" data-lightbox="gallery">
-                <img
-                src="../assets/img/gallery/photo2.png" alt="First photo">
-            </a>
-        </div>
-        <div class="gallery__card gallery__card--long">
-            <a href="../assets/img/gallery/photo3.png" data-lightbox="gallery">
-                <img
-                src="../assets/img/gallery/photo3.png" alt="First photo">
-            </a>
-        </div>
-        <div class="gallery__card">
-            <a href="../assets/img/gallery/photo4.png" data-lightbox="gallery">
-                <img
-                src="../assets/img/gallery/photo4.png" alt="First photo">
-            </a>
-            <div class="gallery__card--inside">
-                <h2 class="gallery__card--inside--title">The cake blah</h2>
-                <span class="hyphen"></span>
+            <span class="feature__line"></span>
+            <div class="feature__box">
+                <div class="feature__icon">
+                    <img src="../assets/img/features/like.png" alt="Like">
+                </div>
+                <h3 class="feature__title">Quality Products</h3>
             </div>
         </div>
-        <div class="gallery__card">
-            <a href="../assets/img/gallery/photo5.png" data-lightbox="gallery">
-                <img
-                src="../assets/img/gallery/photo5.png" alt="First photo">
+
+        <div class="gallery">
+            <div class="gallery__card">
+                <a href="../assets/img/gallery/photo1.png" data-lightbox="gallery">
+                <img src="../assets/img/gallery/photo1.png" alt="First photo">
             </a>
-        </div>
-        <a class="no-visible" href="../assets/img/gallery/photo6.png" data-lightbox="gallery">
-            <img
-            src="../assets/img/gallery/photo6.png" alt="First photo">
+            </div>
+            <div class="gallery__card gallery__card--text">
+                <h2 class="gallery__card--text--title">Gallery</h2>
+            </div>
+            <div class="gallery__card gallery__card--long">
+                <a href="../assets/img/gallery/photo2.png" data-lightbox="gallery">
+                <img src="../assets/img/gallery/photo2.png" alt="First photo">
+            </a>
+            </div>
+            <div class="gallery__card gallery__card--long">
+                <a href="../assets/img/gallery/photo3.png" data-lightbox="gallery">
+                <img src="../assets/img/gallery/photo3.png" alt="First photo">
+            </a>
+            </div>
+            <div class="gallery__card">
+                <a href="../assets/img/gallery/photo4.png" data-lightbox="gallery">
+                <img src="../assets/img/gallery/photo4.png" alt="First photo">
+            </a>
+                <div class="gallery__card--inside">
+                    <h2 class="gallery__card--inside--title">The cake blah</h2>
+                    <span class="hyphen"></span>
+                </div>
+            </div>
+            <div class="gallery__card">
+                <a href="../assets/img/gallery/photo5.png" data-lightbox="gallery">
+                <img src="../assets/img/gallery/photo5.png" alt="First photo">
+            </a>
+            </div>
+            <a class="no-visible" href="../assets/img/gallery/photo6.png" data-lightbox="gallery">
+            <img src="../assets/img/gallery/photo6.png" alt="First photo">
         </a>
-    </div>
-
-    <div class="section section--blog">
-        <h2 class="section__title">Our<span>Blog</span></h2>
-        <p class="section__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil optio incidunt ad.
-            Dolorem nesciunt illum inventore aliquam dolores. Amet reiciendis provident dicta architecto totam
-            quibusdam. Fugit quaerat similique officiis non.</p>
-        <div class="section__posts">
-            <div class="post">
-                <div class="post__description">
-                    <h3 class="post__title">How to make</h3>
-                    <span class="post__subtitle">theFood</span>
-                    <!-- Button only if active -->
-                    <button class="button button--pink">View</button>
-                </div>
-            </div>
-            <div class="post">
-                <div class="post__description">
-                    <h3 class="post__title">How to make</h3>
-                    <span class="post__subtitle">theFood</span>
-                    <button class="button button--pink">View</button>
-                </div>
-            </div>
-            <div class="post">
-                <div class="post__description">
-                    <h3 class="post__title">How to make</h3>
-                    <span class="post__subtitle">theFood</span>
-                    <button class="button button--pink">View</button>
-                </div>
-            </div>
-            <div class="post">
-                <div class="post__description">
-                    <h3 class="post__title">How to make</h3>
-                    <span class="post__subtitle">theFood</span>
-                    <button class="button button--pink">View</button>
-                </div>
-            </div>
-
         </div>
-    </div>
 
-    <div class="section section--contact">
-        <div>
-            <h2 class="section__title">Contact <span>Us</span></h2>
-
-            <form action="#" class="form">
-                <input type="text" class="form__input">
-                <input type="text" class="form__input">
-                <input type="text" class="form__input">
-                <textarea name="" id="" cols="30" rows="10" class="form__text"></textarea>
-                <button type="submit" class="button button--pink">Submit now</button>
-            </form>
-
-        </div>
-        <div>
-            <div class="contact__block">
-                <span class="contact__icon"><i class="fas fa-envelope"></i></span>
-                <div>
-                    <span class="contact__title">Email</span>
-                    <p class="contact__content">Top@Blah.com</p>
+        <div class="section section--blog">
+            <h2 class="title">Our<span>Blog</span></h2>
+            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil optio incidunt
+                ad.
+                Dolorem nesciunt illum inventore aliquam dolores. Amet reiciendis provident dicta architecto totam
+                quibusdam. Fugit quaerat similique officiis non.</p>
+            <div class="blog__dashboard">
+                <div class="blog__post">
+                    <div class="blog__post--content-box">
+                        <div class="blog__post--description">
+                            <h3 class="blog__post--title">How to make</h3>
+                            <span class="blog__post--subtitle">theFood</span>
+                            <button class="blog__button button button--pink">View</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="contact__block">
-                <span class="contact__icon"><i class="fas fa-map-marker-alt"></i></span>
-                <div>
-                    <span class="contact__title">Our restaurent</span>
-                    <p class="contact__content">431-nhuyen khang ha noi-viet nam</p>
+                <div class="blog__post">
+                    <div class="blog__post--content-box">
+                        <div class="blog__post--description">
+                            <h3 class="blog__post--title">How to make</h3>
+                            <span class="blog__post--subtitle">theFood</span>
+                            <button class="blog__button button button--pink">View</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="contact__block">
-                <span class="contact__icon"><i class="fas fa-phone-alt"></i></span>
-                <div>
-                    <span class="contact__title">Phone</span>
-                    <p class="contact__content">(+84)-797-6809</p>
+                <div class="blog__post">
+                    <div class="blog__post--content-box">
+                        <div class="blog__post--description">
+                            <h3 class="blog__post--title">How to make</h3>
+                            <span class="blog__post--subtitle">theFood</span>
+                            <button class="blog__button button button--pink">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__post">
+                    <div class="blog__post--content-box">
+                        <div class="blog__post--description">
+                            <h3 class="blog__post--title">How to make</h3>
+                            <span class="blog__post--subtitle">theFood</span>
+                            <button class="blog__button button button--pink">View</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="section--map">
-        <h3>Find<span> TOP </span>on the map</h3>
-    </div>
-    <footer class="section section--footer">
-        <div class="footer__logo">
-            <img src="../assets/img/header/logo.png" alt="">
+        <div class="contact">
+            <div class="form-group">
+                <h2 class="title title--white title--initial">Contacts <span>Us</span></h2>
+                <form action="#" class="form">
+                    <div class="form--inline">
+                        <input type="text" class="form__input" placeholder="Your name" name="name">
+                        <input type="text" class="form__input" placeholder="Email address" name="email">
+                        <input type="text" class="form__input" placeholder="Subject" name="subject">
+                    </div>
+                    <textarea name="mail-content" cols="30" rows="10" class="form__text"></textarea>
+                    <button type="submit" class="form__button button button--pink">Submit now</button>
+                </form>
+            </div>
+            <div class="contact__info">
+                <div class="block block--email">
+                    <div class="block__cover">
+                        <img class="blockt__icon" src="../assets/img/contact/email.png" alt="Envelope">
+                    </div>
+                    <div class="block__description">
+                        <span class="block__title">Email</span>
+                        <p class="block__content">Top@Blah.com</p>
+                    </div>
+                </div>
+                <div class="block block--address">
+                    <div class="block__cover">
+                        <img class="block__icon" src="../assets/img/contact/map-pin.png" alt="Map pin">
+                    </div>
+                    <div class="block__description">
+                        <span class="block__title">Our restaurent</span>
+                        <p class="block__content">431-nhuyen khang ha noi-viet nam</p>
+                    </div>
+                </div>
+                <div class="block block--phone">
+                    <div class="block__cover">
+                        <img class="block__icon" src="../assets/img/contact/telephone.png" alt="Telephone">
+                    </div>
+                    <div class="block__description">
+                        <span class="block__title">Phone</span>
+                        <p class="block__content">(+84)-797-6809</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p>Copyright 2016. ALl rights Reserved</p>
+        <div class="map-group">
+            <div class="map-group--background">
+                <h3 class=" map-group__title title title--white">Find
+                    <div class="map-group__logo">
+                        <img src="../assets/img/map/elipse-logo.png" alt="Top logo">
+                    </div>
+                    on the map</h3>
+            </div>
+            <iframe class="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=20.978779792785648%2C52.21494338063694%2C21.03542804718018%2C52.238181436018564&amp;layer=mapnik&amp;marker=52.22656392859671%2C21.00710391998291"
+                style="border: 1px solid black"></iframe>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- <div class="footer__logo"> -->
+        <!-- <img src="../assets/img/header/logo.png" alt="Top Food & Drink"> -->
+        <!-- </div> -->
+        <span class="footer__logo">
+            Top
+        </span>
+        <p class="footer__copyright">Copyright 2016. ALl rights Reserved</p>
         <div class="social">
-            <a href="#" class="social__box"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social__box"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social__box"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class="social__box"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social__box"><i class="fab fa-vimeo-v"></i></a>
+            <a href="#" class="social__box"><img src="../assets/img/footer/f.png" alt="Facebook"></a>
+            <a href="#" class="social__box"><img src="../assets/img/footer/bird.png" alt="Twitter"></a>
+            <a href="#" class="social__box"><img src="../assets/img/footer/in.png" alt="Linkedin"></a>
+            <a href="#" class="social__box"><img src="../assets/img/footer/ing.png" alt="Instagram"></a>
+            <a href="#" class="social__box"><img src="../assets/img/footer/v.png" alt="Vimeo"></a>
         </div>
     </footer>
     <script src="../vendor/lightbox2-2.11.1/dist/js/lightbox-plus-jquery.min.js"></script>
-    <script src="./sass/components/nav/nav.js"></script>
-    <script>
-        lightbox.option({
-            'resizeDuration': 300,
-            'wrapAround': true,
-            'alwaysShowNavOnTouchDevices': true,
-            'disableScrolling': true,
-            'wrapAround': true
-        })
-    </script>
-
+    <script src="./script.js"></script>
 
 </body>
 

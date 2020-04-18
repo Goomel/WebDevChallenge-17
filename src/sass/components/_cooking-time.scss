@@ -1,0 +1,10 @@
+.cooking-time{
+    min-height: 70vh;
+    background-color: $peachy;
+    &__image{
+        &>img{
+            @include size(100%,100%);
+        }
+    }
+    
+}

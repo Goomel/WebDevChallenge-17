@@ -37,3 +37,6 @@ sass/
 |
 `– main.scss              // Main Sass file
 
+
+
+//https://en.bem.info

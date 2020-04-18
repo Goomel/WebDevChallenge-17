@@ -1,0 +1,72 @@
+.contact{
+    // @include size(100%, 200vh);
+    text-align: center;
+    background-color: $light-grey;
+    .form-group{
+        @include background('../../assets/img/contact/contact-cover.png', cover, center);
+        background-repeat: no-repeat;
+        // height: 40%;
+    }
+    .form{
+        @include flex(flex, center, center, column);
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+        &__input, &__text{
+            background-color: transparent;
+            border: 1px solid white;
+            width: 90%;
+            padding: 10px;
+            margin: 5px;
+            @include font($nanami-book, $base-font-size, white);
+            letter-spacing: 3px;
+            resize: none;
+        }
+        &__input::placeholder{
+            @include font($nanami-bold, $base-font-size, white);
+            color: white;
+        }
+        &__input:focus, &__text:focus{
+            outline: none;
+        }
+        &__button{
+            width: 90%;
+        }
+    }
+    &__info{
+        height: 100vh;
+        @include flex(flex, center, space-evenly, column);
+    }
+    .block{
+        @include size(70%, 30%);
+        margin: 10px auto;
+        &__description{
+            @include size(100%, 50%);
+            @include flex(flex, center, space-evenly, column);
+            padding: 15px;
+            background-color:white;
+            text-transform: uppercase;
+        }
+        &__title, &__content{
+            @include font($nanami-regular, $base-font-size, $black);
+        }
+
+        &__cover{
+            height: 50%;
+            @include flex-center();
+            background-position: center;
+            background-size: cover;
+        }
+        &--email>.block__cover{
+            background-image: url('../../../assets/img/contact/email-block-img.png');
+        }
+        &--address>.block__cover{
+            background-image: url('../../../assets/img/contact/address-block-img.png');
+        }
+        &--phone>.block__cover{
+            background-image: url('../../../assets/img/contact/phone-block-img.png');
+        }
+    }
+    
+    
+}
