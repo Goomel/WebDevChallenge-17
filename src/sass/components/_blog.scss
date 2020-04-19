@@ -13,16 +13,16 @@
         overflow: hidden;
 
         &:nth-child(1){
-            background-image: url(../../../assets/img/blog/blog-photo1.png);
+            background-image: url('../../assets/img/blog/blog-photo1.png');
         }
         &:nth-child(2){
-            background-image: url(../../../assets/img/blog/blog-photo2.png);
+            background-image: url('../../assets/img/blog/blog-photo2.png');
         }
         &:nth-child(3){
-            background-image: url(../../../assets/img/blog/blog-photo3.png);
+            background-image: url('../../assets/img/blog/blog-photo3.png');
         }
         &:nth-child(4){
-            background-image: url(../../../assets/img/blog/blog-photo4.png);
+            background-image: url('../../assets/img/blog/blog-photo4.png');
         }
         &--content-box{
             position: relative;

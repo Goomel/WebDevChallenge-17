@@ -6,11 +6,16 @@ const elements = {
     firstSection: document.querySelector('.section--our-top'),
     navBar: document.querySelector('.nav'),
     formButton: document.querySelector('.form__button'),
+    mapGroup: document.querySelector('.map-group'),
+    mapBgc: document.querySelector('.map-group__background'),
+    map: document.querySelector('.map'),
 }
 
 const firstSectionOffset = elements.firstSection.offsetTop;
 const navBarHeight = elements.navBar.clientHeight;
+const bgc = elements.mapBgc;
 
+//Prevent default form button click
 elements.formButton.addEventListener('click', e => e.preventDefault());
 
 //Show menu
@@ -29,6 +34,29 @@ elements.scrollDown.addEventListener('click', () => {
     });
 })
 
+//Show and hide map title
+elements.mapGroup.addEventListener('mouseover', () => {
+    if (!bgc.classList.contains('map-group__background--hidden')) {
+        bgc.classList.add('map-group__background--visuallyhidden');
+        bgc.addEventListener('transitionend', () => {
+            bgc.classList.add('map-group__background--hidden');
+        }, {
+            capture: false,
+            once: true,
+            passive: false
+        });
+    }
+})
+elements.map.addEventListener('mouseleave', () => {
+    if (bgc.classList.contains('map-group__background--hidden')) {
+        bgc.classList.remove('map-group__background--hidden');
+        setTimeout(() => {
+            bgc.classList.remove('map-group__background--visuallyhidden');
+        }, 50);
+    }
+})
+
+//Lightbox - gallery options
 lightbox.option({
     'resizeDuration': 300,
     'wrapAround': true,
@@ -36,3 +64,4 @@ lightbox.option({
     'disableScrolling': true,
     'wrapAround': true
 })
+

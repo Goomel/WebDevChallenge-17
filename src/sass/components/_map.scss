@@ -12,12 +12,23 @@
         display: inline-block;
         vertical-align: middle;
     }
-    &--background{
+    &__background{
         position: absolute;
+        display: block;
         @include size(100%,100%);
-        background-color: rgba(0,0,0,0.5);
         z-index: 1;
+        background-color: rgba(0,0,0,0.5);
+        opacity: 1;
+        transition: .3s;
+        &--hidden{
+            display: none;
+        }
+        &--visuallyhidden{
+            opacity: 0;
+            transition: .3s;
+        }
     }
+  
 }
 .map{
     @include size(100%, 100%);

@@ -1,7 +1,8 @@
 .nav{
     @include size(100%, 10vh);
     position: fixed;
-    z-index: 1;
+    top:0;
+    z-index: 999;
     background-color: white;
     @include flex(flex,center,space-between);
     .logo{
@@ -13,13 +14,12 @@
 
     &__list{
         position: fixed;
-        z-index: 1;
         @include size(100%, 90vh);
+        @include flex-center();
+        flex-direction: column;
         margin-top: 50vh;
         background-color: white;
         border-top: 1px solid $grey;
-        @include flex-center();
-        flex-direction: column;
         @include font($nanami-regular, $text-font-size, $black);
         letter-spacing:2px;
         transform: translate(100%);
@@ -31,14 +31,32 @@
         }
     }
     &__item{
-        overflow: hidden;
-        margin: 20px;
+        margin: 10px;
+        padding: 10px;
         text-align: center;
+        list-style-type: none;
+        overflow: hidden;
     }
     &__link{
+        position: relative;
         padding: 20px;
         text-decoration: none;
         color: $black;
+        &:after{
+            content: '';
+            @include size(80%,100%);
+            display: block;
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%, 50%);
+            z-index: -1;
+            background-color: $yellow;
+            transition: .3s ease-out;
+        }
+        &:hover:after{
+            transform: translate(-50%, 0%);
+        }
     }
     &__hamburger{
         font-size: 30px;

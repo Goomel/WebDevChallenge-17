@@ -17,6 +17,26 @@
             background-color: black;
             border-radius: 50%;
             margin: 0 5px;
+            cursor: pointer;
+            transition: .5s;
+            &--facebook{
+                background-color: $fb-color;
+            }
+            &--twitter{
+                background-color: $tw-color;
+            }
+            &--linkedin{
+                background-color: $in-color;
+            }
+            &--instagram{
+                background-color: $ing-color;
+            }
+            &--vimeo{
+                background-color: $v-color;
+            }
+        }
+        &__box:hover{
+            background-color: black;
         }
     }
 }
