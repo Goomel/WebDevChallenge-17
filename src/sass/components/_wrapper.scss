@@ -1,4 +1,5 @@
 .wrapper{
     @include size(100%, 100%);
     @include flex(flex, center, center, column);
+    margin: 10px;
 }

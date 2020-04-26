@@ -1,13 +1,13 @@
-// REFACTOR ME 
-
 .gallery{
     display:flex;
     flex-wrap: wrap;
     &__card{
         width: 50%;
-        min-height: 30vh;
+        height: 35vh;
         position: relative;
         @include flex-center();
+        overflow: hidden;
+        transition: .4s;
         &--text{
             background-color: $peachy;
             &--title{
@@ -27,6 +27,7 @@
                 height: 100%;
                 display: block;
                 object-fit: cover;
+                transition: .3s;
             }
         }
         &--long{
@@ -47,8 +48,23 @@
                 @include font($nanami-regular, $h3-font-size,white);
             }
         }
+        &:hover img{
+            transform: scale(1.05);
+        }
     }
     .no-visible{
         display: none;
+    }
+}
+
+@mixin  gallery\@screen_small{
+    .gallery{
+        height: 80vh;
+        &__card{
+            @include size(25%, 50%);
+            &--long{
+                width:50%;
+            }
+        }
     }
 }

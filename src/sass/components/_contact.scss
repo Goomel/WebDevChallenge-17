@@ -1,26 +1,28 @@
 .contact{
-    // @include size(100%, 200vh);
     text-align: center;
     background-color: $light-grey;
     .form-group{
         @include background('../../assets/img/contact/contact-cover.png', cover, center);
         background-repeat: no-repeat;
-        // height: 40%;
+        padding: 5% 0;
     }
     .form{
         @include flex(flex, center, center, column);
         flex-wrap: wrap;
-        width: 80%;
+        width: 70%;
         margin: 0 auto;
+        &--inline{
+            width: 100%;
+        }
         &__input, &__text{
-            background-color: transparent;
-            border: 1px solid white;
-            width: 90%;
+            width: 100%;
             padding: 10px;
-            margin: 5px;
+            margin: 5px 0;
             @include font($nanami-book, $base-font-size, white);
             letter-spacing: 3px;
             resize: none;
+            background-color: transparent;
+            border: 1px solid lightgrey;
         }
         &__input::placeholder{
             @include font($nanami-bold, $base-font-size, white);
@@ -30,7 +32,7 @@
             outline: none;
         }
         &__button{
-            width: 90%;
+            width: 100%;
         }
     }
     &__info{
@@ -67,6 +69,46 @@
             background-image: url('../../assets/img/contact/phone-block-img.png');
         }
     }
-    
-    
+}
+@mixin contact\@screen_small{
+    .contact{
+        &__info{
+            @include size(70%, auto);
+            margin: 0 auto;
+            flex-direction: row;
+            padding: 5% 0;
+            .block{
+                margin: 5px;
+                @include size(30%, 30vh);
+                min-width: 150px;
+            }
+        }
+       
+    }
+}
+@mixin contact\@screen_wide {
+    .contact{
+        .form{
+            &--inline{
+                @include flex(flex,center,space-between,row);
+                margin-bottom: 30px;
+            }
+            &__input{
+                flex-grow: 1;
+                &:nth-child(2){
+                    margin: 0 30px;
+                }
+            }
+            &__text{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+@mixin contact\@screen_mega{
+    .contact{
+        .form{
+            width: 60%;
+        }
+    }
 }

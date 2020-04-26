@@ -1,5 +1,4 @@
 .header{
-    min-height: 80vh;
     &__slide{
         position: relative;
         height:70vh;
@@ -12,7 +11,18 @@
 
     &__scrollDown{
         position: absolute;
-        bottom: 20px;
+        bottom: 10%;
         cursor: pointer;
+    }
+}
+
+// screen > 1024px
+@mixin header\@screen_wide {
+    .header{
+        height: 90vh;
+        margin-top: 10vh;
+        &__slide{
+            height: 100%;
+        }
     }
 }

@@ -1,0 +1,40 @@
+// Tiny screen > 460px
+@media only screen and (min-width: 460px) {
+    @include features\@screen_tiny;
+}
+
+// Small screen > 640px
+@media only screen and (min-width: 640px) {
+    @include gallery\@screen_small;
+    @include blog\@screen_small;
+    @include contact\@screen_small;
+}
+
+// Medium screen > 768px
+@media only screen and (min-width: 768px) {
+    @include nav\@screen_medium;
+    
+}
+
+// Large screen > 850px
+@media only screen and (min-width: 850px) {
+    @include cooking-time\@screen_large;
+    
+}
+
+
+// Wide screen > 1024px
+@media only screen and (min-width: 1024px) {
+    @include nav\@screen_wide;
+    @include header\@screen_wide;
+    @include content\@screen_wide;
+    @include the-lemon-cake\@screen_wide;
+    @include contact\@screen_wide;
+}
+
+
+// Mega screen > 1280px
+@media only screen and (min-width: 1280px) {
+    @include blog\@screen_mega;
+    @include contact\@screen_mega
+}

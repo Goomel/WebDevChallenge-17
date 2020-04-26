@@ -30,7 +30,7 @@
                     <a class="nav__link" href="#">Blog</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">Features</a>
+                    <a class="nav__link" href="#">featuress</a>
                 </li>
                 <li class="nav__item">
                     <a class="nav__link" href="#">Shop</a>
@@ -46,8 +46,10 @@
             </div>
         </nav>
         <div class="header__slide">
-            <div class="title"><img src="../assets/img/header/tasteonourhands-sm.png" alt="Taste on our hands">
-            </div>
+            <picture class="title">
+                <source media="(min-width: 1024px)" srcset="../assets/img/header/taste-on-our-hands.png">
+                <img src="../assets/img/header/taste-on-our-hands-sm.png" alt="Taste on our hands">
+            </picture>
             <h2 class="subtitle">- Wellcome -</h2>
             <div class="header__scrollDown"><img src="../assets/img/header/double-arrow.png" alt="Double arrow"></div>
         </div>
@@ -55,32 +57,31 @@
 
     <main class="page-content">
         <div class="section section--our-top">
-            <div>
-                <h2 class="title">Welcome to our <span>Top</span></h2>
-                <p class="content">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, suscipit? Itaque, necessitatibus?
-                    Facilis perspiciatis magni voluptates quidem dolores aliquid obcaecati magnam cumque! Ullam
-                    temporibus,
-                    pariatur ex tempora perferendis voluptatibus repudiandae?
-                </p>
-                <button class="button button--pink">Make a reservation</button>
-            </div>
+            <h2 class="title">Welcome to our <span>Top</span></h2>
+            <p class="content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, suscipit? Itaque, necessitatibus?
+                Facilis perspiciatis magni voluptates quidem dolores aliquid obcaecati magnam cumque! Ullam
+                temporibus,
+                pariatur ex tempora perferendis voluptatibus repudiandae?
+            </p>
+            <button class="button button--pink">Make a reservation</button>
         </div>
 
         <div class="cooking-time">
             <div class="cooking-time__image">
-                <img src="../assets/img/cooking-time/cooking-time.png" alt="Cooking">
             </div>
-            <div class="wrapper cooking-time__aside">
-                <h2 class="title title--pink">Make every cooking time a special moment
-                </h2>
-                <img src="../assets/img/cooking-time/pot.png" alt="Pot">
-                <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ratione
-                    commodi,
-                    ex sit modi
-                    praesentium totam eaque hic? Tempora quisquam natus voluptatibus error minus omnis laboriosam
-                    eos
-                    odio ratione qui!</p>
+            <div class="cooking-time__aside">
+                <div class="wrapper">
+                    <h2 class="title title--pink">Make every cooking time a special moment
+                    </h2>
+                    <img src="../assets/img/cooking-time/pot.png" alt="Pot">
+                    <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ratione
+                        commodi,
+                        ex sit modi
+                        praesentium totam eaque hic? Tempora quisquam natus voluptatibus error minus omnis laboriosam
+                        eos
+                        odio ratione qui!</p>
+                </div>
             </div>
         </div>
 
@@ -111,27 +112,27 @@
         </div>
 
         <div class="features">
-            <div class="feature__box">
-                <div class="feature__icon">
+            <div class="features__box">
+                <div class="features__icon">
                     <img src="../assets/img/features/shopping-trolley.png" alt="Shopping trolley">
                 </div>
-                <h3 class="feature__title">
+                <h3 class="features__name">
                     Online Shopping
                 </h3>
             </div>
-            <span class="feature__line"></span>
-            <div class="feature__box">
-                <div class="feature__icon">
+            <span class="features__line"></span>
+            <div class="features__box">
+                <div class="features__icon">
                     <img src="../assets/img/features/delivery.png" alt="Delivery">
                 </div>
-                <h3 class="feature__title">Free Ship</h3>
+                <h3 class="features__name">Free Ship</h3>
             </div>
-            <span class="feature__line"></span>
-            <div class="feature__box">
-                <div class="feature__icon">
+            <span class="features__line"></span>
+            <div class="features__box">
+                <div class="features__icon">
                     <img src="../assets/img/features/like.png" alt="Like">
                 </div>
-                <h3 class="feature__title">Quality Products</h3>
+                <h3 class="features__name">Quality Products</h3>
             </div>
         </div>
 
@@ -174,8 +175,9 @@
         </div>
 
         <div class="section section--blog">
-            <h2 class="title">Our<span>Blog</span></h2>
-            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil optio incidunt
+            <h2 class="title blog__title">Our<span>Blog</span></h2>
+            <p class="content blog__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil optio
+                incidunt
                 ad.
                 Dolorem nesciunt illum inventore aliquam dolores. Amet reiciendis provident dicta architecto totam
                 quibusdam. Fugit quaerat similique officiis non.</p>
@@ -235,7 +237,7 @@
             <div class="contact__info">
                 <div class="block block--email">
                     <div class="block__cover">
-                        <img class="blockt__icon" src="../assets/img/contact/email.png" alt="Envelope">
+                        <img class="block__icon" src="../assets/img/contact/email.png" alt="Envelope">
                     </div>
                     <div class="block__description">
                         <span class="block__title">Email</span>

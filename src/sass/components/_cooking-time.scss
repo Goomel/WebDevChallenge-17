@@ -1,10 +1,29 @@
 .cooking-time{
+    display: flex; 
     min-height: 70vh;
     background-color: $peachy;
     &__image{
-        &>img{
-            @include size(100%,100%);
+        display: none;
+        @include background("../../assets/img/cooking-time/cooking-time-cover.png", cover, center);
+    }
+    &__aside{
+        margin: auto 0;
+    }
+}
+
+// screen > 850px
+@mixin cooking-time\@screen_large{
+    .cooking-time{
+        height: 80vh;
+        &__image{
+            display: block;
+            @include size(50%, 100%);
+        }
+        &__aside{
+            max-height: initial;
+            @include size(50%, 100%);
+            
         }
     }
-    
+  
 }

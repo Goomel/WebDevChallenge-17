@@ -1,13 +1,40 @@
 .features{
     @include flex(flex, center, center, column);
     text-align: center;
-    .feature__box{
-        min-width: 50%;
-        margin: 30px;
+    position: relative;
+    @include size(80%, auto);
+    margin: 0 auto;
+    &__box{
+        height: 80%;
+        margin: 20px;
     }
-    .feature__line{
-        display: block;
-        @include size(60%, 1px);
-        background-color: black;
+    &__icon{
+        &:nth-child(1){
+            margin-left: -15px;
+        }
+        &>img{
+           width: 100px; 
+        }
+    }
+    &__name{
+        @include font($nanami-regular, $base-font-size, $black);
+        margin: 10px;
+    }
+}
+
+@mixin features\@screen_tiny{
+    .features{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        padding: 10px;
+        &__box{
+            max-width: 200px;
+        }
+        &__line{
+            @include size(2px, 80px);
+            background-color: black;
+            transform: translateY(-50%);
+        }
     }
 }

@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
 }
-
+//flex shortcut
 @mixin flex($display, $align, $justify, $direction:auto){
     display: $display;
     align-items: $align;
@@ -21,13 +21,13 @@
         flex-direction: row;
     }
 }
-
-@mixin font($family: $nanami, $size: $baseFontSize, $color:black) {
+//set font-family, size and color
+@mixin font($family: $nanami, $size: $base-font-size, $color:black) {
     font-family: $family;
     font-size: $size;
     color: $color;
 }
-
+//background image
 @mixin background($image, $size, $position){
     background-image: url($image);
     background-size: $size;

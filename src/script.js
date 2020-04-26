@@ -10,13 +10,8 @@ const elements = {
     mapBgc: document.querySelector('.map-group__background'),
     map: document.querySelector('.map'),
 }
-
 const firstSectionOffset = elements.firstSection.offsetTop;
 const navBarHeight = elements.navBar.clientHeight;
-const bgc = elements.mapBgc;
-
-//Prevent default form button click
-elements.formButton.addEventListener('click', e => e.preventDefault());
 
 //Show menu
 elements.burger.addEventListener('click', () => {
@@ -34,7 +29,11 @@ elements.scrollDown.addEventListener('click', () => {
     });
 })
 
+//Prevent default form button click
+elements.formButton.addEventListener('click', e => e.preventDefault());
+
 //Show and hide map title
+const bgc = elements.mapBgc;
 elements.mapGroup.addEventListener('mouseover', () => {
     if (!bgc.classList.contains('map-group__background--hidden')) {
         bgc.classList.add('map-group__background--visuallyhidden');
@@ -65,3 +64,8 @@ lightbox.option({
     'wrapAround': true
 })
 
+
+
+// **************************
+// const headerTitle = document.querySelector('.header__slide>.title');
+// console.log(headerTitle);

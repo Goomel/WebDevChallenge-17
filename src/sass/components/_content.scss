@@ -1,9 +1,16 @@
 .content{
-    font-size: $text-font-size;
-    color: $grey;
+    @include font($nanami-book, $base-font-size, $grey);
     margin: 0 15px 20px 15px;
     text-align: center;
     &--white{
         color: white;
+    }
+}
+
+// screen > 1024px
+@mixin content\@screen_wide{
+    .content{
+        width: 60%;
+        margin: 20px auto;
     }
 }

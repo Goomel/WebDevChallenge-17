@@ -11,7 +11,7 @@
         background-size: cover;
         margin: 20px;
         overflow: hidden;
-
+        transition: .3s;
         &:nth-child(1){
             background-image: url('../../assets/img/blog/blog-photo1.png');
         }
@@ -28,30 +28,32 @@
             position: relative;
             background-color: #fff;
             border-radius: 50%;
-            @include size(100%, 100%);
+            @include size(100%, 110%);
             top: 0;
+            left: 0;
             transform: translateY(-50%);
             box-shadow: 0px 2px 8px $black;
             overflow: hidden;
             transition: .5s ease-in-out;
-        }
+        } 
+
         &--description{
             position: absolute;
             @include size(80%, 50%);
+            @include flex(flex,center,center,column);
             top:50%;
             left: 50%;
             transform: translateX(-50%);
-            overflow: hidden;
-            margin-top: 10px;
+            // overflow: hidden;
         }
         &--title{
             @include font($nanami-bold, $h3-font-size, $black);
             text-transform: uppercase;
-            width:100%;
+            width:90%;
             display: block;
         }
         &--subtitle{
-            @include font($master-of-break, $h3-font-size, $strong-red);
+            @include font($master-of-break, $text-font-size, $strong-red);
             letter-spacing: 2px;
             width: 100%;
             display: block;
@@ -60,5 +62,47 @@
     &__button{
         margin: 0;
         padding: 10px;
+    }
+}
+
+@mixin blog\@screen_small{
+    .blog{
+        &__dashboard{
+            width: 80%;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &__post{
+            width: 40%;
+        }
+    }
+}
+
+@mixin blog\@screen_mega{
+    .blog{
+        &__dashboard{
+            flex-wrap: nowrap;
+            margin-bottom: 5%;
+        }
+        &__post{
+            width: 25%;
+            &:hover &--content-box{
+                transform: scale(1.3) translate(0, -35%);
+            }
+            &:hover .blog__button{
+                transform: scale(.7) translateY(0);
+            }
+            &:hover{
+                transform: translateY(30px);
+                transition: .3s;
+            }
+            &--content-box{
+                height: 80%;
+                cursor: pointer;
+            }
+        }
+        &__button{
+            transform: translateY(100px);
+        }
     }
 }

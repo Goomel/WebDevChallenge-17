@@ -1,6 +1,9 @@
 .section{
     font-family: $nanami-regular;
     text-align: center;
-    min-height: 55vh;
+    min-height: 60vh;
     @include flex(flex,center,center,column);
+    .content{
+        width: 60%;
+    }
 }

@@ -1,0 +1,32 @@
+.the-lemon-cake{
+        height: 90vh;
+        @include background('../../assets/img/the-lemon-cake/the-lemon-cake.png', cover, initial);
+        position: relative;
+    &__cost{
+        @include font($master-of-break, $h2-font-size, white);
+    }
+    .content{
+        width: 80%;
+    }
+}
+
+@mixin the-lemon-cake\@screen_wide {
+    .the-lemon-cake{
+        .wrapper{
+            align-items: flex-start;
+            width: 50%;
+            margin-left: 55%;
+        }
+        .content{
+            width: 60%;
+            text-align: initial;
+            margin-left: 15px;
+        }
+        &__cost{
+            margin-left: 15px;
+        }
+        .title{
+            margin-left: -10px;
+        }
+    }
+}

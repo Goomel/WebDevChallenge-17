@@ -1,12 +1,12 @@
 .nav{
     @include size(100%, 10vh);
+    @include flex(flex,center,space-between);
     position: fixed;
     top:0;
     z-index: 999;
     background-color: white;
-    @include flex(flex,center,space-between);
     .logo{
-        padding-left: 20px;
+        margin: 5px 20px;
         &>img{
             width: 3em;
         }
@@ -20,12 +20,9 @@
         margin-top: 50vh;
         background-color: white;
         border-top: 1px solid $grey;
-        @include font($nanami-regular, $text-font-size, $black);
-        letter-spacing:2px;
         transform: translate(100%);
         transition: .4s ease-in;
         &--active{
-            display: flex;
             transform: translate(0%);
             transition: .4s ease-in;
         }
@@ -39,16 +36,18 @@
     }
     &__link{
         position: relative;
-        padding: 20px;
         text-decoration: none;
-        color: $black;
+        @include font($nanami-bold, $text-font-size, $black);
+        text-transform: uppercase;
+        letter-spacing:2px;
+        padding: 20px;
         &:after{
             content: '';
             @include size(80%,100%);
             display: block;
             position: absolute;
             top: 50%;
-            left:50%;
+            left: 50%;
             transform: translate(-50%, 50%);
             z-index: -1;
             background-color: $yellow;
@@ -81,6 +80,49 @@
             div:nth-child(3) {
                 transform: rotate(45deg) translate(-6px, -7px);
             }
+        }
+    }
+}
+//media queries
+//screen > 768px
+@mixin nav\@screen_medium {
+    .nav{
+        @include flex(flex,flex-end, space-around);
+        .logo{
+            &>img{
+                width: 3.5em;
+            }
+        }
+        &__list{
+            position: relative;
+            transform: translate(0);
+            @include size(75%, auto);
+            @include flex(flex,center,space-around);
+            margin: 0;
+            font-size: $nav-font-sm;
+            border: none;
+        }
+        &__item{
+            padding: 0 0 15px 0;
+            margin: 0;
+        }
+        &__link{
+            padding: 0;
+            &:after{
+                @include size(100%, 150%);
+                transform: translate(-50%, 100%);
+            }
+        }
+        &__hamburger{
+            display: none;
+        }
+    }
+}
+
+@mixin nav\@screen_wide {
+    .nav{
+        &__list{
+            width: 60%
         }
     }
 }
