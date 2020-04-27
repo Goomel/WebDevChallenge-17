@@ -57,6 +57,7 @@
     }
 }
 
+//screen > 640px
 @mixin  gallery\@screen_small{
     .gallery{
         height: 80vh;

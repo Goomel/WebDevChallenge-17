@@ -65,6 +65,7 @@
     }
 }
 
+//screen > 640px
 @mixin blog\@screen_small{
     .blog{
         &__dashboard{
@@ -77,7 +78,7 @@
         }
     }
 }
-
+//screen > 1280px
 @mixin blog\@screen_mega{
     .blog{
         &__dashboard{

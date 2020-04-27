@@ -1,5 +1,6 @@
 //DOM elements 
 const elements = {
+    preloader: document.querySelector('.preloader'),
     burger: document.querySelector('.nav__hamburger'),
     menu: document.querySelector('.nav__list'),
     scrollDown: document.querySelector('.header__scrollDown'),
@@ -12,6 +13,11 @@ const elements = {
 }
 const firstSectionOffset = elements.firstSection.offsetTop;
 const navBarHeight = elements.navBar.clientHeight;
+
+//Preloader
+window.onload = () => {
+    elements.preloader.style.display = 'none';
+}
 
 //Show menu
 elements.burger.addEventListener('click', () => {

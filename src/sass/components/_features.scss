@@ -22,6 +22,7 @@
     }
 }
 
+//screen > 460px
 @mixin features\@screen_tiny{
     .features{
         flex-direction: row;
