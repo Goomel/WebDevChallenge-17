@@ -28,13 +28,13 @@
     @include nav\@screen_wide;
     @include header\@screen_wide;
     @include content\@screen_wide;
-    @include the-lemon-cake\@screen_wide;
     @include contact\@screen_wide;
 }
 
 
 // Mega screen > 1280px
 @media only screen and (min-width: 1280px) {
+    @include the-lemon-cake\@screen_mega;
     @include blog\@screen_mega;
     @include contact\@screen_mega
 }

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top FOOD & DRINK</title>
     <script src="https://kit.fontawesome.com/8ff3ad3ebd.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="../vendor/lightbox2-2.11.1/dist/css/lightbox.min.css">
 </head>
@@ -238,10 +240,11 @@
                 <form action="#" class="form">
                     <div class="form--inline">
                         <input type="text" class="form__input" placeholder="Your name" name="name">
-                        <input type="text" class="form__input" placeholder="Email address" name="email">
+                        <input type="email" class="form__input" placeholder="Email address" name="email">
                         <input type="text" class="form__input" placeholder="Subject" name="subject">
                     </div>
-                    <textarea name="mail-content" cols="30" rows="10" class="form__text"></textarea>
+                    <textarea name="mail-content" aria-label="Email content" cols="30" rows="10"
+                        class="form__text"></textarea>
                     <button type="submit" class="form__button button button--pink">Submit now</button>
                 </form>
             </div>
@@ -295,11 +298,11 @@
         </span>
         <p class="footer__copyright">Copyright 2016. ALl rights Reserved</p>
         <div class="social">
-            <a href="#" class="social__box social__box--facebook"><img src="../assets/img/footer/f.png" alt="Facebook"></a>
-            <a href="#" class="social__box social__box--twitter"><img src="../assets/img/footer/bird.png" alt="Twitter"></a>
-            <a href="#" class="social__box social__box--linkedin"><img src="../assets/img/footer/in.png" alt="Linkedin"></a>
-            <a href="#" class="social__box social__box--instagram"><img src="../assets/img/footer/ing.png" alt="Instagram"></a>
-            <a href="#" class="social__box social__box--vimeo"><img src="../assets/img/footer/v.png" alt="Vimeo"></a>
+            <a href="#" class="social__box social__box--facebook"><img src="../assets/img/footer/f.png" alt="Facebook" aria-label="Our facebook"></a>
+            <a href="#" class="social__box social__box--twitter"><img src="../assets/img/footer/bird.png" alt="Twitter" aria-label="Our twitter"></a>
+            <a href="#" class="social__box social__box--linkedin"><img src="../assets/img/footer/in.png" alt="Linkedin" aria-label="Our Linkedin"></a>
+            <a href="#" class="social__box social__box--instagram"><img src="../assets/img/footer/ing.png" alt="Instagram" aria-label="Our Instagram"></a>
+            <a href="#" class="social__box social__box--vimeo"><img src="../assets/img/footer/v.png" alt="Vimeo" aria-label="Our Vimeo"></a>
         </div>
     </footer>
     <script src="../vendor/lightbox2-2.11.1/dist/js/lightbox-plus-jquery.min.js"></script>

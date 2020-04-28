@@ -24,6 +24,9 @@
             background-color: transparent;
             border: 1px solid lightgrey;
         }
+        &__input:hover, &__text:hover{
+            background-color: rgba(0,0,0,0.3);
+        }
         &__input::placeholder{
             @include font($nanami-bold, $base-font-size, white);
             color: white;
