@@ -15,10 +15,10 @@
 
     &__list{
         position: fixed;
-        @include size(100%, 90vh);
+        @include size(100%, 100vh);
         @include flex-center();
         flex-direction: column;
-        margin-top: 50vh;
+        top: 0;
         background-color: white;
         border-top: 1px solid $grey;
         transform: translate(100%);

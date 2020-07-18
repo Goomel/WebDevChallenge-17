@@ -36,6 +36,7 @@
         }
         &__button{
             width: 100%;
+            margin: 0;
         }
     }
     &__info{
@@ -84,7 +85,7 @@
             padding: 5% 0;
             .block{
                 margin: 5px;
-                @include size(30%, 30vh);
+                @include size(30%, 40vh);
                 min-width: 150px;
             }
         }
@@ -109,6 +110,9 @@
             &__text{
                 margin-bottom: 30px;
             }
+        }
+        &__info .block{
+            height: 30vh;
         }
     }
 }

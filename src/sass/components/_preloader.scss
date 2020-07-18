@@ -1,50 +1,10 @@
 .preloader{
     @include size(100vw, 100vh);
-    background-color: #fff;
+    background-color: #E74C3C;
     position: fixed;
     z-index: 9999;
     top:0;
     overflow: hidden;
     @include flex-center();
-    &__wrapper{
-        position: fixed;
-        @include size(100px, 100px);
-        @include flex-center();
-        background-color: #fff;
-    }
-    &__outer{
-        @include flex-center();
-        @include size(100%, 100%);
-        border-radius: 50%;
-        background-color: $strong-red;
-        animation: rotation 1.2s linear infinite;
-    }
-    &__inner{
-        @include flex-center();
-        @include size(99%, 99%);
-        background: radial-gradient(50% 94% at bottom, #fff 99%, transparent) top no-repeat,
-                    radial-gradient(50% 100% at top, #fff 99%, transparent) bottom no-repeat;
-        background-size: 100% 50%;
-    }
-    &__logo{
-        @include size(80px, 80px);
-        @include flex-center();
-        animation: rotation 1.2s linear infinite reverse;
-        @include font($master-of-break, $h2-font-size, #fff);
-        background-color: $strong-red;
-        border-radius: 50%;
-        &>span{
-            margin-left: 8px;
-        } 
 }
-
-    @keyframes rotation{
-        from{
-         transform: rotate(0deg);   
-        }
-        to{
-        transform: rotate(360deg);
-        }
-    }
-}
-
+  

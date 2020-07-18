@@ -4,6 +4,7 @@
         position: relative;
     &__cost{
         @include font($master-of-break, $h2-font-size, white);
+        margin: 15px 0;
     }
     .content{
         width: 80%;
